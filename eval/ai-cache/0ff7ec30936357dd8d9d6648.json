@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"Masthead\",\"props\":{}},{\"id\":\"s1\",\"name\":\"PostList\",\"props\":{}},{\"id\":\"s2\",\"name\":\"Pagination\",\"props\":{}},{\"id\":\"s3\",\"name\":\"Sidebar\",\"props\":{}},{\"id\":\"s4\",\"name\":\"NewsletterForm\",\"props\":{}},{\"id\":\"s5\",\"name\":\"Footer\",\"props\":{}},{\"id\":\"r0\",\"name\":\"PostCard\",\"props\":{\"label\":\"title\",\"items\":\"tags\"}},{\"id\":\"r1\",\"name\":\"CategoryItem\",\"props\":{\"label\":\"name\",\"count\":\"postCount\"}}]}"
+}

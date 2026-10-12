@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "```json\n{\"components\":[{\"id\":\"s0\",\"name\":\"StudioHeader\",\"props\":{}},{\"id\":\"s1\",\"name\":\"Gallery\",\"props\":{}},{\"id\":\"s2\",\"name\":\"Footer\",\"props\":{}},{\"id\":\"r0\",\"name\":\"PhotoCard\",\"props\":{}}]}\n```"
+}

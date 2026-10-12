@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Orders dashboard | Acme Shop admin</title>
+  </head>
+  <body class="admin">
+    <aside class="sidebar">
+      <p class="logo">Acme <b>Admin</b></p>
+      <nav class="side-nav">
+        <a href="/admin" class="side-link active"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2 8l6-6 6 6v6H2z" fill="currentColor"></path></svg> Overview</a>
+        <a href="/admin/orders" class="side-link"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 2h10v12H3z" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg> Orders</a>
+        <a href="/admin/products" class="side-link"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"></circle></svg> Products</a>
+      </nav>
+    </aside>
+    <main class="content">
+      <h1>Today</h1>
+      <div class="stats">
+        <div class="stat-card">
+          <p class="stat-label">Revenue</p>
+          <p class="stat-value">$4,280</p>
+          <div class="bar"><div class="bar-fill" style="width: 72%; background: #2f5d50"></div></div>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">Orders</p>
+          <p class="stat-value">63</p>
+          <div class="bar"><div class="bar-fill" style="width: 54%; background: #2f5d50"></div></div>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">Refunds</p>
+          <p class="stat-value">2</p>
+          <div class="bar"><div class="bar-fill" style="width: 6%; background: #b5653f"></div></div>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">New customers</p>
+          <p class="stat-value">18</p>
+          <div class="bar"><div class="bar-fill" style="width: 35%; background: #2f5d50"></div></div>
+        </div>
+      </div>
+      <section class="recent">
+        <h2>Recent orders</h2>
+        <table class="orders">
+          <thead>
+            <tr><th>Order</th><th>Customer</th><th>Total</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="/admin/orders/1042">#1042</a></td><td>Ola Bright</td><td>$86.00</td><td><span class="badge badge-paid">Paid</span></td></tr>
+            <tr><td><a href="/admin/orders/1041">#1041</a></td><td>Ravi Menon</td><td>$12.50</td><td><span class="badge badge-paid">Paid</span></td></tr>
+            <tr><td><a href="/admin/orders/1040">#1040</a></td><td>June Park</td><td>$140.00</td><td><span class="badge badge-pending">Pending</span></td></tr>
+            <tr><td><a href="/admin/orders/1039">#1039</a></td><td>Tom Ellis</td><td>$54.20</td><td><span class="badge badge-refunded">Refunded</span></td></tr>
+            <tr><td><a href="/admin/orders/1038">#1038</a></td><td>Ama Owusu</td><td>$33.00</td><td><span class="badge badge-paid">Paid</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

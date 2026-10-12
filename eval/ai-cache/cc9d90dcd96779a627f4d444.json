@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"BookBikeRepairSection\",\"props\":{}},{\"id\":\"s1\",\"name\":\"BookingForm\",\"props\":{}}]}"
+}

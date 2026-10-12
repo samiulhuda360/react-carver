@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Acme Invoicing | Pricing</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1d2320; }
+      .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding: 2rem; }
+      .plan { border: 1px solid #c9d4cf; border-radius: 8px; padding: 1.5rem; }
+      .plan.featured { border-color: #2f5d50; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Acme <strong>Invoicing</strong></a>
+      <nav class="main-nav">
+        <a href="/features">Features</a>
+        <a href="/pricing" aria-current="page">Pricing</a>
+        <a href="/help">Help</a>
+        <a href="/login" class="btn btn-outline">Log in</a>
+      </nav>
+    </header>
+    <main>
+      <section class="pricing" id="pricing">
+        <h1>Simple pricing for small teams</h1>
+        <p class="lead">Every plan includes unlimited clients, recurring invoices and a <em>30-day</em> free trial.</p>
+        <div class="plans">
+          <article class="plan">
+            <h2 class="plan-name">Starter</h2>
+            <p class="plan-price"><span class="amount">$9</span> per month</p>
+            <ul class="plan-features">
+              <li>1 user</li>
+              <li>50 invoices a month</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn" href="/signup?plan=starter">Start free trial</a>
+          </article>
+          <article class="plan featured">
+            <h2 class="plan-name">Team</h2>
+            <p class="plan-price"><span class="amount">$29</span> per month</p>
+            <ul class="plan-features">
+              <li>5 users</li>
+              <li>Unlimited invoices</li>
+              <li>Online card payments</li>
+              <li>Priority email support</li>
+            </ul>
+            <a class="btn" href="/signup?plan=team">Start free trial</a>
+          </article>
+          <article class="plan">
+            <h2 class="plan-name">Business</h2>
+            <p class="plan-price"><span class="amount">$79</span> per month</p>
+            <ul class="plan-features">
+              <li>25 users</li>
+              <li>Unlimited invoices</li>
+              <li>Online card payments</li>
+              <li>Approval workflows</li>
+              <li>Phone support &amp; onboarding call</li>
+            </ul>
+            <a class="btn" href="/signup?plan=business">Start free trial</a>
+          </article>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <h2>Questions people ask</h2>
+        <details class="faq-item">
+          <summary>Can I change plans later?</summary>
+          <p>Yes. Upgrades apply at once; downgrades apply at the next billing date.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you charge per invoice?</summary>
+          <p>No. Starter has a monthly limit, the other plans are unlimited.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What happens when the trial ends?</summary>
+          <p>Nothing is charged until you add a card. Your data stays for 90 days.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is there a discount for charities?</summary>
+          <p>Registered charities get 50% off any plan. Write to us with your number.</p>
+        </details>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2027 Acme Invoicing Ltd. Prices exclude sales tax.</p>
+    </footer>
+  </body>
+</html>

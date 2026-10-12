@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"EventHero\",\"props\":{}},{\"id\":\"s1\",\"name\":\"Schedule\",\"props\":{}},{\"id\":\"s2\",\"name\":\"Speakers\",\"props\":{}},{\"id\":\"s3\",\"name\":\"EventFooter\",\"props\":{}},{\"id\":\"r0\",\"name\":\"ScheduleSlot\",\"props\":{\"date\":\"time\"}},{\"id\":\"r1\",\"name\":\"SpeakerCard\",\"props\":{\"speaker\":\"id\",\"title\":\"name\"}}]}"
+}

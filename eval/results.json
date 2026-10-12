@@ -1,0 +1,689 @@
+[
+  {
+    "page": "ridgeway-tours/index.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 2587
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": true,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:10 Type '{ children: Element; type: \"button\"; className: string; id: string; \"aria-label\": string; onclick: string; }' is not assignable to type 'DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>'.   Property 'onclick' does not exist on type 'DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>'. Did you mean 'onClick'?"
+      ],
+      "warnings": [
+        "Invalid event handler property `%s`. React events use the camelCase naming convention, for example `onClick`. onclick"
+      ],
+      "firstDiff": "body > nav[0] > div[0] > div[0] > #text[1]: expected text \" \", got <button>",
+      "ms": 666
+    },
+    "sections": {
+      "found": 6,
+      "total": 6,
+      "namedRules": 6,
+      "namedAi": 6,
+      "namedAiAll": 6
+    },
+    "repeated": {
+      "detected": 4,
+      "matched": 4,
+      "total": 4,
+      "namedRules": 3,
+      "namedAi": 3,
+      "namedAiAll": 3
+    },
+    "components": 11,
+    "aiSource": "cache",
+    "props": {
+      "total": 15,
+      "genericRules": 4,
+      "genericAi": 2
+    }
+  },
+  {
+    "page": "pricing.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 603
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "body > header[0] > nav[1] > #text[1]: expected text \" \", got <a>",
+      "ms": 350
+    },
+    "sections": {
+      "found": 5,
+      "total": 5,
+      "namedRules": 5,
+      "namedAi": 5,
+      "namedAiAll": 4
+    },
+    "repeated": {
+      "detected": 2,
+      "matched": 2,
+      "total": 2,
+      "namedRules": 2,
+      "namedAi": 2,
+      "namedAiAll": 0
+    },
+    "components": 9,
+    "aiSource": "cache",
+    "props": {
+      "total": 7,
+      "genericRules": 3,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "blog.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 456
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": true,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:13 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:22 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:32 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:40 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?"
+      ],
+      "warnings": [
+        "Invalid DOM property `%s`. Did you mean `%s`? datetime dateTime"
+      ],
+      "firstDiff": "body > div[1] > aside[1] > form[2] > #text[1]: expected text \" \", got <input>",
+      "ms": 454
+    },
+    "sections": {
+      "found": 4,
+      "total": 4,
+      "namedRules": 4,
+      "namedAi": 4,
+      "namedAiAll": 4
+    },
+    "repeated": {
+      "detected": 2,
+      "matched": 2,
+      "total": 2,
+      "namedRules": 1,
+      "namedAi": 2,
+      "namedAiAll": 2
+    },
+    "components": 9,
+    "aiSource": "cache",
+    "props": {
+      "total": 10,
+      "genericRules": 3,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "restaurant-menu.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 379
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": false,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:5 Type 'string' has no properties in common with type 'Properties<string | number, string & {}>'.",
+        "src/App.tsx:62 Type 'string' has no properties in common with type 'Properties<string | number, string & {}>'.",
+        "render: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX."
+      ],
+      "warnings": [],
+      "firstDiff": "not rendered",
+      "ms": 410
+    },
+    "sections": {
+      "found": 3,
+      "total": 3,
+      "namedRules": 3,
+      "namedAi": 3,
+      "namedAiAll": 1
+    },
+    "repeated": {
+      "detected": 2,
+      "matched": 2,
+      "total": 2,
+      "namedRules": 2,
+      "namedAi": 2,
+      "namedAiAll": 2
+    },
+    "components": 6,
+    "aiSource": "cache",
+    "props": {
+      "total": 4,
+      "genericRules": 2,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "contact-form.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 409
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": true,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:8 Type '{ children: Element[]; className: string; action: string; method: string; novalidate: true; }' is not assignable to type 'DetailedHTMLProps<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>'.   Property 'novalidate' does not exist on type 'DetailedHTMLProps<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>'. Did you mean 'noValidate'?",
+        "src/App.tsx:12 Type '{ id: string; name: string; type: \"text\"; autocomplete: string; maxlength: string; required: true; }' is not assignable to type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.   Property 'autocomplete' does not exist on type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'. Did you mean 'autoComplete'?",
+        "src/App.tsx:14 Type '{ id: string; name: string; type: \"tel\"; inputmode: string; placeholder: string; }' is not assignable to type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.   Property 'inputmode' does not exist on type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'. Did you mean 'inputMode'?",
+        "src/App.tsx:16 Type '{ id: string; name: string; type: \"email\"; value: string; readonly: true; tabindex: string; }' is not assignable to type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'.   Property 'readonly' does not exist on type 'DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>'. Did you mean 'readOnly'?",
+        "src/App.tsx:33 Type 'string' is not assignable to type 'number'.",
+        "src/App.tsx:33 Type 'string' is not assignable to type 'number'."
+      ],
+      "warnings": [
+        "Invalid DOM property `%s`. Did you mean `%s`? novalidate noValidate",
+        "Invalid DOM property `%s`. Did you mean `%s`? autocomplete autoComplete",
+        "Invalid DOM property `%s`. Did you mean `%s`? maxlength maxLength",
+        "Invalid DOM property `%s`. Did you mean `%s`? inputmode inputMode",
+        "Invalid DOM property `%s`. Did you mean `%s`? readonly readOnly",
+        "Invalid DOM property `%s`. Did you mean `%s`? tabindex tabIndex",
+        "You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`.",
+        "Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.",
+        "Use the `defaultValue` or `value` props instead of setting children on <textarea>.",
+        "You provided a `checked` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultChecked`. Otherwise, set either `onChange` or `readOnly`.",
+        "You provided a `checked` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultChecked`. Otherwise, set either `onChange` or `readOnly`."
+      ],
+      "firstDiff": "body > main[0] > form[2]: attributes differ: [action=/book | class=booking-form | method=post | novalidate] vs [action=/book | class=booking-form | method=post]",
+      "ms": 280
+    },
+    "sections": {
+      "found": 2,
+      "total": 2,
+      "namedRules": 1,
+      "namedAi": 1,
+      "namedAiAll": 1
+    },
+    "repeated": {
+      "detected": 0,
+      "matched": 0,
+      "total": 0,
+      "namedRules": 0,
+      "namedAi": 0,
+      "namedAiAll": 0
+    },
+    "components": 3,
+    "aiSource": "cache",
+    "props": {
+      "total": 0,
+      "genericRules": 0,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "data-table.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 344
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:8 Type '{ children: Element[]; className: string; cellspacing: string; cellpadding: string; }' is not assignable to type 'DetailedHTMLProps<TableHTMLAttributes<HTMLTableElement>, HTMLTableElement>'.   Property 'cellspacing' does not exist on type 'DetailedHTMLProps<TableHTMLAttributes<HTMLTableElement>, HTMLTableElement>'. Did you mean 'cellSpacing'?",
+        "src/App.tsx:30 Type '{ children: string; colspan: string; }' is not assignable to type 'DetailedHTMLProps<TdHTMLAttributes<HTMLTableDataCellElement>, HTMLTableDataCellElement>'.   Property 'colspan' does not exist on type 'DetailedHTMLProps<TdHTMLAttributes<HTMLTableDataCellElement>, HTMLTableDataCellElement>'. Did you mean 'colSpan'?"
+      ],
+      "warnings": [
+        "Invalid DOM property `%s`. Did you mean `%s`? cellspacing cellSpacing",
+        "Invalid DOM property `%s`. Did you mean `%s`? cellpadding cellPadding",
+        "Invalid DOM property `%s`. Did you mean `%s`? colspan colSpan"
+      ],
+      "firstDiff": "",
+      "ms": 327
+    },
+    "sections": {
+      "found": 1,
+      "total": 1,
+      "namedRules": 1,
+      "namedAi": 1,
+      "namedAiAll": 1
+    },
+    "repeated": {
+      "detected": 1,
+      "matched": 1,
+      "total": 1,
+      "namedRules": 1,
+      "namedAi": 0,
+      "namedAiAll": 0
+    },
+    "components": 3,
+    "aiSource": "cache",
+    "props": {
+      "total": 6,
+      "genericRules": 5,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "gallery.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 240
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": true,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:28 Type '{ src: string; srcset: string; sizes: string; alt: string; loading: \"lazy\"; width: string; height: string; }' is not assignable to type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'.   Property 'srcset' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'. Did you mean 'srcSet'?",
+        "src/App.tsx:32 Type '{ src: string; srcset: string; sizes: string; alt: string; loading: \"lazy\"; width: string; height: string; }' is not assignable to type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'.   Property 'srcset' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'. Did you mean 'srcSet'?",
+        "src/App.tsx:36 Type '{ src: string; srcset: string; sizes: string; alt: string; loading: \"lazy\"; width: string; height: string; }' is not assignable to type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'.   Property 'srcset' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'. Did you mean 'srcSet'?",
+        "src/App.tsx:40 Type '{ src: string; srcset: string; sizes: string; alt: string; loading: \"lazy\"; width: string; height: string; }' is not assignable to type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'.   Property 'srcset' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'. Did you mean 'srcSet'?",
+        "src/App.tsx:44 Type '{ src: string; srcset: string; sizes: string; alt: string; loading: \"lazy\"; width: string; height: string; }' is not assignable to type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'.   Property 'srcset' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'. Did you mean 'srcSet'?",
+        "src/App.tsx:48 Type '{ src: string; srcset: string; sizes: string; alt: string; loading: \"lazy\"; width: string; height: string; }' is not assignable to type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'.   Property 'srcset' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'. Did you mean 'srcSet'?"
+      ],
+      "warnings": [
+        "Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth",
+        "Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap",
+        "Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin",
+        "Invalid DOM property `%s`. Did you mean `%s`? fill-rule fillRule",
+        "Invalid DOM property `%s`. Did you mean `%s`? clip-rule clipRule",
+        "Invalid DOM property `%s`. Did you mean `%s`? srcset srcSet"
+      ],
+      "firstDiff": "body > header[0] > div[1] > button[0] > #text[0]: expected text \" \", got <svg>",
+      "ms": 394
+    },
+    "sections": {
+      "found": 3,
+      "total": 3,
+      "namedRules": 3,
+      "namedAi": 3,
+      "namedAiAll": 3
+    },
+    "repeated": {
+      "detected": 1,
+      "matched": 1,
+      "total": 1,
+      "namedRules": 1,
+      "namedAi": 1,
+      "namedAiAll": 1
+    },
+    "components": 5,
+    "aiSource": "cache",
+    "props": {
+      "total": 4,
+      "genericRules": 0,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "docs-page.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 380
+    },
+    "naive": {
+      "compiled": false,
+      "typechecked": false,
+      "rendered": false,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "v:src/App.tsx:23 Expected \"}\" but found \"braces\"",
+        "src/App.tsx:23 Cannot find name 'curly'. Did you mean 'URL'?",
+        "src/App.tsx:23 '}' expected.",
+        "src/App.tsx:23 Unexpected token. Did you mean `{'}'}` or `&rbrace;`?",
+        "src/App.tsx:25 '}' expected.",
+        "src/App.tsx:27 Cannot find name 'target'.",
+        "src/App.tsx:29 Unexpected token. Did you mean `{'}'}` or `&rbrace;`?",
+        "src/App.tsx:37 Cannot find name 'NAME'. Did you mean 'name'?"
+      ],
+      "warnings": [],
+      "firstDiff": "not rendered",
+      "ms": 329
+    },
+    "sections": {
+      "found": 2,
+      "total": 2,
+      "namedRules": 2,
+      "namedAi": 2,
+      "namedAiAll": 1
+    },
+    "repeated": {
+      "detected": 0,
+      "matched": 0,
+      "total": 0,
+      "namedRules": 0,
+      "namedAi": 0,
+      "namedAiAll": 0
+    },
+    "components": 3,
+    "aiSource": "cache",
+    "props": {
+      "total": 0,
+      "genericRules": 0,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "event-landing.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 369
+    },
+    "naive": {
+      "compiled": false,
+      "typechecked": false,
+      "rendered": false,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "v:src/App.tsx:53 Expected \"}\" but found \";\"",
+        "src/App.tsx:10 Type '{ children: string; type: \"button\"; className: string; onclick: string; }' is not assignable to type 'DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>'.   Property 'onclick' does not exist on type 'DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>'. Did you mean 'onClick'?",
+        "src/App.tsx:11 Type '{ children: string; href: string; className: string; onclick: string; }' is not assignable to type 'DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>'.   Property 'onclick' does not exist on type 'DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>'. Did you mean 'onClick'?",
+        "src/App.tsx:16 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:17 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:18 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:19 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:20 Type '{ children: string; datetime: string; }' is not assignable to type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'.   Property 'datetime' does not exist on type 'DetailedHTMLProps<TimeHTMLAttributes<HTMLTimeElement>, HTMLTimeElement>'. Did you mean 'dateTime'?",
+        "src/App.tsx:53 Cannot find name 'kind'.",
+        "src/App.tsx:53 '}' expected.",
+        "src/App.tsx:53 Unexpected token. Did you mean `{'}'}` or `&rbrace;`?",
+        "src/App.tsx:54 Type 'void' is not assignable to type 'ReactNode'.",
+        "src/App.tsx:54 '}' expected.",
+        "src/App.tsx:54 Unexpected token. Did you mean `{'}'}` or `&rbrace;`?"
+      ],
+      "warnings": [],
+      "firstDiff": "not rendered",
+      "ms": 459
+    },
+    "sections": {
+      "found": 4,
+      "total": 4,
+      "namedRules": 4,
+      "namedAi": 4,
+      "namedAiAll": 4
+    },
+    "repeated": {
+      "detected": 2,
+      "matched": 2,
+      "total": 2,
+      "namedRules": 2,
+      "namedAi": 2,
+      "namedAiAll": 2
+    },
+    "components": 7,
+    "aiSource": "cache",
+    "props": {
+      "total": 8,
+      "genericRules": 0,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "team-page.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 254
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": false,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:46 Type 'string' has no properties in common with type 'Properties<string | number, string & {}>'.",
+        "render: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX."
+      ],
+      "warnings": [],
+      "firstDiff": "not rendered",
+      "ms": 272
+    },
+    "sections": {
+      "found": 2,
+      "total": 2,
+      "namedRules": 2,
+      "namedAi": 2,
+      "namedAiAll": 1
+    },
+    "repeated": {
+      "detected": 1,
+      "matched": 1,
+      "total": 1,
+      "namedRules": 1,
+      "namedAi": 1,
+      "namedAiAll": 1
+    },
+    "components": 4,
+    "aiSource": "cache",
+    "props": {
+      "total": 6,
+      "genericRules": 1,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "product-page.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 341
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": true,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:5 Type '{ children: Element[]; className: string; itemscope: true; itemtype: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>'.   Property 'itemscope' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>'. Did you mean 'itemScope'?",
+        "src/App.tsx:7 Type '{ className: string; src: string; alt: string; itemprop: string; }' is not assignable to type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'.   Property 'itemprop' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>'. Did you mean 'itemProp'?",
+        "src/App.tsx:16 Type '{ children: string; itemprop: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>'.   Property 'itemprop' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>'. Did you mean 'itemProp'?",
+        "src/App.tsx:17 Type '{ children: string; itemprop: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>'.   Property 'itemprop' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>'. Did you mean 'itemProp'?",
+        "src/App.tsx:18 Type '{ children: string; itemprop: string; }' is not assignable to type 'DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>'.   Property 'itemprop' does not exist on type 'DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>'. Did you mean 'itemProp'?"
+      ],
+      "warnings": [
+        "Invalid DOM property `%s`. Did you mean `%s`? itemscope itemScope",
+        "Invalid DOM property `%s`. Did you mean `%s`? itemtype itemType",
+        "Invalid DOM property `%s`. Did you mean `%s`? itemprop itemProp",
+        "You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`."
+      ],
+      "firstDiff": "body > main[0]: attributes differ: [class=product | itemscope | itemtype=https://schema.org/Product] vs [class=product | itemtype=https://schema.org/Product]",
+      "ms": 362
+    },
+    "sections": {
+      "found": 4,
+      "total": 4,
+      "namedRules": 4,
+      "namedAi": 4,
+      "namedAiAll": 3
+    },
+    "repeated": {
+      "detected": 2,
+      "matched": 2,
+      "total": 2,
+      "namedRules": 2,
+      "namedAi": 2,
+      "namedAiAll": 0
+    },
+    "components": 8,
+    "aiSource": "cache",
+    "props": {
+      "total": 7,
+      "genericRules": 0,
+      "genericAi": 0
+    }
+  },
+  {
+    "page": "dashboard.html",
+    "verify": {
+      "compiled": true,
+      "typechecked": true,
+      "rendered": true,
+      "textMatch": true,
+      "domMatch": true,
+      "pass": true,
+      "errors": [],
+      "warnings": [],
+      "firstDiff": "",
+      "ms": 413
+    },
+    "naive": {
+      "compiled": true,
+      "typechecked": false,
+      "rendered": false,
+      "textMatch": false,
+      "domMatch": false,
+      "pass": false,
+      "errors": [
+        "src/App.tsx:19 Type 'string' has no properties in common with type 'Properties<string | number, string & {}>'.",
+        "src/App.tsx:24 Type 'string' has no properties in common with type 'Properties<string | number, string & {}>'.",
+        "src/App.tsx:29 Type 'string' has no properties in common with type 'Properties<string | number, string & {}>'.",
+        "src/App.tsx:34 Type 'string' has no properties in common with type 'Properties<string | number, string & {}>'.",
+        "render: The `style` prop expects a mapping from style properties to values, not a string. For example, style={{marginRight: spacing + 'em'}} when using JSX."
+      ],
+      "warnings": [],
+      "firstDiff": "not rendered",
+      "ms": 464
+    },
+    "sections": {
+      "found": 3,
+      "total": 3,
+      "namedRules": 2,
+      "namedAi": 2,
+      "namedAiAll": 2
+    },
+    "repeated": {
+      "detected": 2,
+      "matched": 2,
+      "total": 2,
+      "namedRules": 1,
+      "namedAi": 1,
+      "namedAiAll": 1
+    },
+    "components": 7,
+    "aiSource": "cache",
+    "props": {
+      "total": 9,
+      "genericRules": 6,
+      "genericAi": 6
+    }
+  }
+]

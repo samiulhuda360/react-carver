@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trail Flask 750 ml | Acme Outdoors</title>
+  </head>
+  <body>
+    <main class="product" itemscope itemtype="https://schema.org/Product">
+      <section class="product-media">
+        <img class="main-photo" src="p/flask-main.jpg" alt="Trail Flask in moss green" itemprop="image" />
+        <div class="thumbs">
+          <button type="button" class="thumb" aria-label="Show moss green"><img src="p/flask-moss.jpg" alt="" /></button>
+          <button type="button" class="thumb" aria-label="Show slate grey"><img src="p/flask-slate.jpg" alt="" /></button>
+          <button type="button" class="thumb" aria-label="Show clay red"><img src="p/flask-clay.jpg" alt="" /></button>
+          <button type="button" class="thumb" aria-label="Show sand"><img src="p/flask-sand.jpg" alt="" /></button>
+        </div>
+      </section>
+      <section class="product-info">
+        <h1 itemprop="name">Trail Flask 750 ml</h1>
+        <p class="price"><span itemprop="price">$34.00</span> <s class="was">$42.00</s></p>
+        <p itemprop="description">Double-walled steel keeps water cold for 24 hours. Fits every bike bottle cage we tested.</p>
+        <form class="buy" action="/cart" method="post">
+          <label for="qty">Quantity</label>
+          <input id="qty" name="qty" type="number" min="1" max="10" value="1" />
+          <button type="submit" class="add-to-cart">Add to basket</button>
+        </form>
+        <ul class="facts">
+          <li>Weight: 410&nbsp;g</li>
+          <li>Height: 26&nbsp;cm</li>
+          <li>Dishwasher safe (lid by hand)</li>
+        </ul>
+      </section>
+    </main>
+    <section class="reviews" id="reviews">
+      <h2>Reviews</h2>
+      <div class="review">
+        <p class="stars" aria-label="5 out of 5"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></p>
+        <h3 class="review-title">Still cold after a long ride</h3>
+        <p class="review-body">Filled it with ice at 7am and was still drinking cold water at lunch.</p>
+        <p class="review-author">Nadia, verified buyer</p>
+      </div>
+      <div class="review">
+        <p class="stars" aria-label="4 out of 5"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></p>
+        <h3 class="review-title">Great, a bit heavy</h3>
+        <p class="review-body">Does the job well. Heavier than my old plastic bottle, as you'd expect.</p>
+        <p class="review-author">Sam, verified buyer</p>
+      </div>
+      <div class="review">
+        <p class="stars" aria-label="3 out of 5"><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span></p>
+        <h3 class="review-title">Lid is fiddly</h3>
+        <p class="review-body">Keeps drinks cold, but the lid is hard to open with gloves on.</p>
+        <p class="review-author">Chris, verified buyer</p>
+      </div>
+    </section>
+  </body>
+</html>

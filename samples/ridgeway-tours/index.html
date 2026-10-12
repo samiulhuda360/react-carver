@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ridgeway Tours | Small-group walking holidays</title>
+    <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="#home"><img src="./images/logo.svg" class="nav-logo" alt="Ridgeway Tours" /></a>
+          <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+            <span class="bars">&#9776;</span>
+          </button>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link">home</a></li>
+          <li><a href="#about" class="nav-link">about</a></li>
+          <li><a href="#services" class="nav-link">services</a></li>
+          <li><a href="#tours" class="nav-link">tours</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <header class="hero" id="home">
+      <div class="hero-banner">
+        <h1>Walk the long way round</h1>
+        <p>
+          Small-group walking holidays on quiet ridgelines, coastal paths and old
+          drovers' roads. Bags carried, beds booked, maps sorted.
+        </p>
+        <a href="#tours" class="btn hero-btn">explore tours</a>
+      </div>
+    </header>
+
+    <!-- about -->
+    <section class="section" id="about">
+      <div class="section-title">
+        <h2>about <span>us</span></h2>
+      </div>
+      <div class="section-center about-center">
+        <div class="about-img">
+          <img src="./images/about.svg" class="about-photo" alt="A path over rolling hills" />
+        </div>
+        <article class="about-info">
+          <h3>explore the difference</h3>
+          <p>
+            We are four guides who got tired of rushing. Every route is walked by one of us
+            before it goes on sale, and no group is larger than twelve.
+          </p>
+          <p>
+            You walk at your own pace; we move your luggage, cook breakfast with local
+            produce and keep a spare pair of dry socks in the van.
+          </p>
+          <a href="#tours" class="btn">read more</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="section services" id="services">
+      <div class="section-title">
+        <h2>our <span>services</span></h2>
+      </div>
+      <div class="section-center services-center">
+        <article class="service">
+          <span class="service-icon">&#128176;</span>
+          <div class="service-info">
+            <h4 class="service-title">fair prices</h4>
+            <p class="service-text">One price covers rooms, luggage transfers and guiding. No surprise extras at the end.</p>
+          </div>
+        </article>
+        <article class="service">
+          <span class="service-icon">&#127794;</span>
+          <div class="service-info">
+            <h4 class="service-title">quiet trails</h4>
+            <p class="service-text">Routes avoid the crowded honeypots and follow paths most visitors never find.</p>
+          </div>
+        </article>
+        <article class="service">
+          <span class="service-icon">&#127858;</span>
+          <div class="service-info">
+            <h4 class="service-title">real comfort</h4>
+            <p class="service-text">Family-run inns, drying rooms for wet boots and a hot meal waiting each evening.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- tours -->
+    <section class="section" id="tours">
+      <div class="section-title">
+        <h2>featured <span>tours</span></h2>
+      </div>
+      <div class="section-center featured-center">
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-1.svg" class="tour-img" alt="Coastal cliffs at sunset" />
+            <p class="tour-date">may 14th, 2027</p>
+          </div>
+          <div class="tour-info">
+            <h4>Coast to Cove</h4>
+            <p>Six days on a cliff-top path, ending each night in a fishing village with a harbour-side inn.</p>
+            <div class="tour-footer">
+              <p><span class="tour-location">&#128205; south coast</span></p>
+              <p>6 days</p>
+              <p>from $1,450</p>
+            </div>
+          </div>
+        </article>
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-2.svg" class="tour-img" alt="Pine forest in the hills" />
+            <p class="tour-date">june 2nd, 2027</p>
+          </div>
+          <div class="tour-info">
+            <h4>The Pine Ridges</h4>
+            <p>Shaded forest trails and three summit days, with a rest day at a lakeside lodge.</p>
+            <div class="tour-footer">
+              <p><span class="tour-location">&#128205; high forest</span></p>
+              <p>8 days</p>
+              <p>from $1,980</p>
+            </div>
+          </div>
+        </article>
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-3.svg" class="tour-img" alt="Rolling farmland at dawn" />
+            <p class="tour-date">august 21st, 2027</p>
+          </div>
+          <div class="tour-info">
+            <h4>Drovers' Road</h4>
+            <p>An easy-going walk along ancient cattle routes between market towns and farm kitchens.</p>
+            <div class="tour-footer">
+              <p><span class="tour-location">&#128205; the downs</span></p>
+              <p>5 days</p>
+              <p>from $1,120</p>
+            </div>
+          </div>
+        </article>
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-4.svg" class="tour-img" alt="Snow-capped peaks above a valley" />
+            <p class="tour-date">september 9th, 2027</p>
+          </div>
+          <div class="tour-info">
+            <h4>Valley of Peaks</h4>
+            <p>Our hardest route: long climbs, big views and two nights in a mountain hut.</p>
+            <div class="tour-footer">
+              <p><span class="tour-location">&#128205; north valleys</span></p>
+              <p>10 days</p>
+              <p>from $2,640</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="section footer">
+      <ul class="footer-links">
+        <li><a href="#home" class="footer-link">home</a></li>
+        <li><a href="#about" class="footer-link">about</a></li>
+        <li><a href="#services" class="footer-link">services</a></li>
+        <li><a href="#tours" class="footer-link">tours</a></li>
+      </ul>
+      <p class="copyright">
+        copyright &copy; Ridgeway Tours <span id="date">2027</span>. all rights reserved
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

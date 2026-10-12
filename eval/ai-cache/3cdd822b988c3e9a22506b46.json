@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"MenuHeader\",\"props\":{}},{\"id\":\"s1\",\"name\":\"MenuSection\",\"props\":{}},{\"id\":\"s2\",\"name\":\"HoursSection\",\"props\":{}},{\"id\":\"r0\",\"name\":\"MenuCategory\",\"props\":{}},{\"id\":\"r1\",\"name\":\"HoursRow\",\"props\":{\"heading\":\"days\",\"cell\":\"time\"}}]}"
+}

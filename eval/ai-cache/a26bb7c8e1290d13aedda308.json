@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"StockReport\",\"props\":{}},{\"id\":\"r0\",\"name\":\"StockItemRow\",\"props\":{\"cell\":\"sku\",\"cell2\":\"itemName\",\"cell3\":\"onHand\",\"cell4\":\"reorderAt\",\"variant\":\"statusClass\"}}]}"
+}

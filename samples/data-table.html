@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Warehouse stock report</title>
+  </head>
+  <body>
+    <section class="report" id="stock">
+      <h1>Stock levels, week 41</h1>
+      <p>Items below their reorder point are marked <span class="status status-low">low</span>.</p>
+      <table class="stock-table" cellspacing="0" cellpadding="4">
+        <caption>All figures are units on hand at 06:00 on Monday.</caption>
+        <thead>
+          <tr>
+            <th scope="col">SKU</th>
+            <th scope="col">Item</th>
+            <th scope="col">On hand</th>
+            <th scope="col">Reorder at</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>HX-1001</td><td>Hex bolts M8 (box of 100)</td><td>420</td><td>150</td><td><span class="status status-ok">ok</span></td></tr>
+          <tr><td>HX-1002</td><td>Hex bolts M10 (box of 100)</td><td>95</td><td>120</td><td><span class="status status-low">low</span></td></tr>
+          <tr><td>WS-2040</td><td>Washers 10 mm (bag of 500)</td><td>310</td><td>100</td><td><span class="status status-ok">ok</span></td></tr>
+          <tr><td>CB-0300</td><td>Cable ties 300 mm</td><td>1,250</td><td>400</td><td><span class="status status-ok">ok</span></td></tr>
+          <tr><td>GL-0007</td><td>Nitrile gloves, L</td><td>38</td><td>60</td><td><span class="status status-low">low</span></td></tr>
+          <tr><td>TP-1900</td><td>Duct tape, 50 m</td><td>77</td><td>40</td><td><span class="status status-ok">ok</span></td></tr>
+          <tr><td>SL-0520</td><td>Silicone sealant, clear</td><td>12</td><td>30</td><td><span class="status status-low">low</span></td></tr>
+          <tr><td>BX-6000</td><td>Shipping boxes, medium</td><td>640</td><td>200</td><td><span class="status status-ok">ok</span></td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="4">Items below reorder point</td><td>3</td></tr>
+        </tfoot>
+      </table>
+    </section>
+  </body>
+</html>

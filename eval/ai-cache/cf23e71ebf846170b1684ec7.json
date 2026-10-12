@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"SiteHeader\",\"props\":{}},{\"id\":\"s1\",\"name\":\"MainNavbar\",\"props\":{}},{\"id\":\"s2\",\"name\":\"PricingSection\",\"props\":{}},{\"id\":\"s3\",\"name\":\"PricingPlans\",\"props\":{}},{\"id\":\"s4\",\"name\":\"FaqSection\",\"props\":{}},{\"id\":\"s5\",\"name\":\"SiteFooter\",\"props\":{}},{\"id\":\"r0\",\"name\":\"PricingPlanCard\",\"props\":{\"variant\":\"cardStyle\",\"name\":\"planName\",\"amount\":\"monthlyPrice\",\"items\":\"featureList\",\"href\":\"signupUrl\"}},{\"id\":\"r1\",\"name\":\"FaqAccordionItem\",\"props\":{\"summary\":\"question\",\"text\":\"answer\"}}]}"
+}

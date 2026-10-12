@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"Navbar\",\"props\":{}},{\"id\":\"s1\",\"name\":\"Hero\",\"props\":{}},{\"id\":\"s2\",\"name\":\"About\",\"props\":{}},{\"id\":\"s3\",\"name\":\"Services\",\"props\":{}},{\"id\":\"s4\",\"name\":\"Tours\",\"props\":{}},{\"id\":\"s5\",\"name\":\"Footer\",\"props\":{}},{\"id\":\"r0\",\"name\":\"NavbarItem\",\"props\":{}},{\"id\":\"r1\",\"name\":\"ServiceItem\",\"props\":{}},{\"id\":\"r2\",\"name\":\"TourCard\",\"props\":{\"text2\":\"duration\",\"text3\":\"price\"}},{\"id\":\"r3\",\"name\":\"FooterItem\",\"props\":{}}]}"
+}

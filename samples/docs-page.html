@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Config reference | Acme CLI docs</title>
+  </head>
+  <body>
+    <div class="docs">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#config">The config file</a>
+            <ol>
+              <li><a href="#targets">Targets</a></li>
+              <li><a href="#env">Environment values</a></li>
+            </ol>
+          </li>
+          <li><a href="#limits">Limits</a></li>
+        </ol>
+      </nav>
+      <article class="doc-body">
+        <h1 id="install">Install</h1>
+        <p>Install with your package manager, then check the version with <code>acme --version</code>. Press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>C</kbd> to stop a running job.</p>
+        <h2 id="config">The config file</h2>
+        <p>Settings live in <code>acme.config.json</code>. Values in <code>{curly braces}</code> are replaced at run time, and <code>&lt;angle brackets&gt;</code> mark required fields.</p>
+        <pre><code class="language-json">{
+  "name": "&lt;project name&gt;",
+  "targets": ["web", "worker"],
+  "output": "dist/{target}",
+  "retries": 3
+}</code></pre>
+        <h3 id="targets">Targets</h3>
+        <ul>
+          <li><strong>web</strong> builds the browser bundle.</li>
+          <li><strong>worker</strong> builds the background job runner.</li>
+          <li><strong>all</strong> builds both, in parallel when <code>CPU &gt; 2</code>.</li>
+        </ul>
+        <h3 id="env">Environment values</h3>
+        <p>Use <code>${NAME}</code> to read an environment variable.<br />Missing values stop the build with exit code&nbsp;2.</p>
+        <blockquote>
+          <p><strong>Note:</strong> values are read once, when the job starts. Changes during a run are ignored.</p>
+        </blockquote>
+        <h2 id="limits">Limits</h2>
+        <p>A project can have up to 20 targets &amp; 5 nested configs. Paths longer than 240 characters fail on Windows.</p>
+        <hr />
+        <p class="edit"><a href="https://example.com/edit/config.md">Edit this page</a> &middot; Last updated 3&nbsp;October&nbsp;2027</p>
+      </article>
+    </div>
+  </body>
+</html>

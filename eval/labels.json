@@ -1,0 +1,133 @@
+{
+  "about": "Hand-written expectations for each sample page: which elements a developer would turn into section components, which runs of blocks should become one component plus data, and names a reviewer would accept. Selectors are simple: tag, .class and #id.",
+  "pages": {
+    "ridgeway-tours/index.html": {
+      "sections": [
+        { "select": "nav.navbar", "names": ["Navbar", "NavBar", "Navigation"] },
+        { "select": "header.hero", "names": ["Hero", "HeroSection", "HeroBanner"] },
+        { "select": "section#about", "names": ["About", "AboutUs", "AboutSection"] },
+        { "select": "section#services", "names": ["Services", "OurServices", "ServicesSection"] },
+        { "select": "section#tours", "names": ["Tours", "FeaturedTours", "ToursSection"] },
+        { "select": "footer", "names": ["Footer", "SiteFooter"] }
+      ],
+      "repeated": [
+        { "parent": "ul.nav-links", "item": "li", "count": 4, "names": ["NavLink", "NavItem", "NavbarLink", "NavLinkItem", "PageLink"] },
+        { "parent": "ul.footer-links", "item": "li", "count": 4, "names": ["FooterLink", "FooterItem", "FooterNavLink", "FooterLinkItem"] },
+        { "parent": "div.services-center", "item": "article.service", "count": 3, "names": ["Service", "ServiceCard", "ServiceItem"] },
+        { "parent": "div.featured-center", "item": "article.tour-card", "count": 4, "names": ["TourCard", "Tour", "FeaturedTour"] }
+      ]
+    },
+    "pricing.html": {
+      "sections": [
+        { "select": "header.site-header", "names": ["Header", "SiteHeader"] },
+        { "select": "nav.main-nav", "names": ["Navbar", "MainNav", "Navigation", "MainNavigation"] },
+        { "select": "section#pricing", "names": ["Pricing", "PricingSection", "Plans", "PricingPlans"] },
+        { "select": "section#faq", "names": ["Faq", "FAQ", "FaqSection", "Questions"] },
+        { "select": "footer", "names": ["Footer", "SiteFooter"] }
+      ],
+      "repeated": [
+        { "parent": "div.plans", "item": "article.plan", "count": 3, "names": ["Plan", "PricingPlan", "PlanCard", "PricingCard"] },
+        { "parent": "section#faq", "item": "details.faq-item", "count": 4, "names": ["FaqItem", "Question", "FaqEntry", "FaqQuestion"] }
+      ]
+    },
+    "blog.html": {
+      "sections": [
+        { "select": "header.masthead", "names": ["Header", "Masthead", "SiteHeader", "BlogHeader"] },
+        { "select": "main.posts", "names": ["Posts", "PostList", "PostsList", "BlogPosts"] },
+        { "select": "aside.sidebar", "names": ["Sidebar", "BlogSidebar"] },
+        { "select": "footer", "names": ["Footer", "SiteFooter"] }
+      ],
+      "repeated": [
+        { "parent": "main.posts", "item": "article.post-card", "count": 4, "names": ["PostCard", "Post", "BlogPost", "PostPreview"] },
+        { "parent": "ul.categories", "item": "li", "count": 5, "names": ["Category", "CategoryItem", "CategoryLink"] }
+      ]
+    },
+    "restaurant-menu.html": {
+      "sections": [
+        { "select": "header.menu-header", "names": ["Header", "MenuHeader", "RestaurantHeader"] },
+        { "select": "main.menu", "names": ["Menu", "RestaurantMenu"] },
+        { "select": "section.hours", "names": ["Hours", "OpeningHours"] }
+      ],
+      "repeated": [
+        { "parent": "main.menu", "item": "section.menu-category", "count": 3, "names": ["MenuCategory", "MenuSection", "Category"] },
+        { "parent": "tbody", "item": "tr", "count": 3, "names": ["HoursRow", "OpeningHoursRow", "HoursTableRow", "OpeningHour"] }
+      ]
+    },
+    "contact-form.html": {
+      "sections": [
+        { "select": "main.page", "names": ["BookingPage", "Page", "BookRepair", "RepairBooking", "BookRepairPage"] },
+        { "select": "form.booking-form", "names": ["BookingForm", "RepairForm", "RepairBookingForm"] }
+      ],
+      "repeated": []
+    },
+    "data-table.html": {
+      "sections": [
+        { "select": "section#stock", "names": ["Stock", "StockReport", "StockLevels"] }
+      ],
+      "repeated": [
+        { "parent": "tbody", "item": "tr", "count": 8, "names": ["StockRow", "StockItem", "StockTableRow", "ItemRow"] }
+      ]
+    },
+    "gallery.html": {
+      "sections": [
+        { "select": "header.studio-header", "names": ["Header", "StudioHeader"] },
+        { "select": "main.gallery", "names": ["Gallery", "PhotoGallery"] },
+        { "select": "footer", "names": ["Footer", "StudioFooter"] }
+      ],
+      "repeated": [
+        { "parent": "main.gallery", "item": "figure.shot", "count": 6, "names": ["Shot", "Photo", "GalleryItem", "PhotoCard"] }
+      ]
+    },
+    "docs-page.html": {
+      "sections": [
+        { "select": "nav.toc", "names": ["Toc", "TableOfContents", "OnThisPage"] },
+        { "select": "article.doc-body", "names": ["DocBody", "Article", "DocContent", "Content", "DocsContent"] }
+      ],
+      "repeated": []
+    },
+    "event-landing.html": {
+      "sections": [
+        { "select": "header.event-hero", "names": ["Hero", "EventHero", "Header"] },
+        { "select": "section#schedule", "names": ["Schedule", "EventSchedule"] },
+        { "select": "section#speakers", "names": ["Speakers", "SpeakerList"] },
+        { "select": "footer", "names": ["Footer", "EventFooter"] }
+      ],
+      "repeated": [
+        { "parent": "ol.timeline", "item": "li.slot", "count": 5, "names": ["Slot", "ScheduleSlot", "ScheduleItem", "Session", "TimelineItem"] },
+        { "parent": "div.speaker-grid", "item": "div.speaker", "count": 4, "names": ["Speaker", "SpeakerCard"] }
+      ]
+    },
+    "team-page.html": {
+      "sections": [
+        { "select": "section#team", "names": ["Team", "TeamSection", "OurTeam"] },
+        { "select": "aside.hiring", "names": ["Hiring", "HiringBanner", "HiringNotice", "JobsBanner"] }
+      ],
+      "repeated": [
+        { "parent": "ul.team-grid", "item": "li.member", "count": 4, "names": ["Member", "TeamMember", "MemberCard", "TeamMemberCard"] }
+      ]
+    },
+    "product-page.html": {
+      "sections": [
+        { "select": "main.product", "names": ["Product", "ProductDetails", "ProductPage"] },
+        { "select": "section.product-media", "names": ["ProductMedia", "ProductGallery", "Media", "ProductImages"] },
+        { "select": "section.product-info", "names": ["ProductInfo", "ProductDetails"] },
+        { "select": "section#reviews", "names": ["Reviews", "ProductReviews"] }
+      ],
+      "repeated": [
+        { "parent": "div.thumbs", "item": "button.thumb", "count": 4, "names": ["Thumb", "Thumbnail", "ThumbButton", "ThumbnailButton"] },
+        { "parent": "section#reviews", "item": "div.review", "count": 3, "names": ["Review", "ReviewCard"] }
+      ]
+    },
+    "dashboard.html": {
+      "sections": [
+        { "select": "aside.sidebar", "names": ["Sidebar", "AdminSidebar"] },
+        { "select": "main.content", "names": ["Content", "Dashboard", "Main", "MainContent"] },
+        { "select": "section.recent", "names": ["RecentOrders", "Recent", "OrdersTable"] }
+      ],
+      "repeated": [
+        { "parent": "div.stats", "item": "div.stat-card", "count": 4, "names": ["StatCard", "Stat", "Metric", "MetricCard"] },
+        { "parent": "tbody", "item": "tr", "count": 5, "names": ["OrderRow", "Order", "RecentOrderRow", "OrdersRow"] }
+      ]
+    }
+  }
+}

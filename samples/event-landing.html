@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Northern Makers Day 2027</title>
+    <script src="https://cdn.example.com/analytics.js" async></script>
+  </head>
+  <body>
+    <!-- Top banner -->
+    <header class="event-hero">
+      <p class="eyebrow">Saturday 13 November &middot; Old Mill, Leeds</p>
+      <h1>Northern Makers Day</h1>
+      <p>One day of talks, workshops and a hardware swap for people who build things.</p>
+      <button type="button" class="cta" onclick="openTickets('general')">Get a ticket</button>
+      <a href="#schedule" class="secondary" onclick="track('schedule-click'); return true;">See the schedule</a>
+    </header>
+    <section class="schedule" id="schedule">
+      <h2>Schedule</h2>
+      <ol class="timeline">
+        <li class="slot"><time datetime="09:30">09:30</time> <span class="slot-title">Doors &amp; coffee</span> <span class="slot-room">Foyer</span></li>
+        <li class="slot"><time datetime="10:00">10:00</time> <span class="slot-title">Keynote: building in small batches</span> <span class="slot-room">Main hall</span></li>
+        <li class="slot"><time datetime="11:15">11:15</time> <span class="slot-title">Soldering for absolute beginners</span> <span class="slot-room">Workshop A</span></li>
+        <li class="slot"><time datetime="13:00">13:00</time> <span class="slot-title">Lunch and hardware swap</span> <span class="slot-room">Courtyard</span></li>
+        <li class="slot"><time datetime="14:30">14:30</time> <span class="slot-title">Lightning talks</span> <span class="slot-room">Main hall</span></li>
+      </ol>
+    </section>
+    <section class="speakers" id="speakers">
+      <h2>Speakers</h2>
+      <div class="speaker-grid">
+        <div class="speaker" data-speaker="ines">
+          <img src="speakers/ines.png" alt="" class="avatar" />
+          <h3>In&ecirc;s Marlow</h3>
+          <p class="role">Furniture maker</p>
+        </div>
+        <div class="speaker" data-speaker="tobi">
+          <img src="speakers/tobi.png" alt="" class="avatar" />
+          <h3>Tobi Akande</h3>
+          <p class="role">Electronics teacher</p>
+        </div>
+        <div class="speaker" data-speaker="kasia">
+          <img src="speakers/kasia.png" alt="" class="avatar" />
+          <h3>Kasia Nowak</h3>
+          <p class="role">Bike frame builder</p>
+        </div>
+        <div class="speaker" data-speaker="lee">
+          <img src="speakers/lee.png" alt="" class="avatar" />
+          <h3>Lee Hartley</h3>
+          <p class="role">Ceramicist</p>
+        </div>
+      </div>
+    </section>
+    <noscript><p>Ticket booking needs JavaScript.</p></noscript>
+    <footer class="event-footer">
+      <p>Questions? <a href="mailto:hello@example.com">hello@example.com</a></p>
+    </footer>
+    <script>
+      function openTickets(kind) { window.location.href = "/tickets?kind=" + kind; }
+      function track(name) { console.log("track", name); }
+    </script>
+  </body>
+</html>

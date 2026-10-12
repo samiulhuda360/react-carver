@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Book a repair | Acme Bikes</title>
+  </head>
+  <body>
+    <main class="page">
+      <h1>Book a bike repair</h1>
+      <p class="intro">Tell us what's wrong and pick a drop-off day. We reply within one working day.</p>
+      <form class="booking-form" action="/book" method="post" novalidate>
+        <fieldset class="group">
+          <legend>Your details</legend>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required />
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="07700 900123" />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" value="rider@example.com" readonly tabindex="-1" />
+        </fieldset>
+        <fieldset class="group">
+          <legend>The bike</legend>
+          <label for="kind">Type of bike</label>
+          <select id="kind" name="kind">
+            <optgroup label="Pedal">
+              <option value="road">Road</option>
+              <option value="gravel" selected>Gravel</option>
+              <option value="hybrid">Hybrid</option>
+            </optgroup>
+            <optgroup label="Electric">
+              <option value="e-city">E-city</option>
+              <option value="e-cargo">E-cargo</option>
+            </optgroup>
+          </select>
+          <label for="problem">What needs fixing?</label>
+          <textarea id="problem" name="problem" rows="4" cols="40">Gears skip under load
+and the rear brake squeals.</textarea>
+          <p class="hint">Mention any noises, when they happen, and anything you have already tried.</p>
+        </fieldset>
+        <fieldset class="group">
+          <legend>Service level</legend>
+          <label><input type="radio" name="level" value="basic" checked /> Basic check ($35)</label>
+          <label><input type="radio" name="level" value="full" /> Full service ($80)</label>
+          <label><input type="radio" name="level" value="rebuild" disabled /> Full rebuild (fully booked)</label>
+        </fieldset>
+        <label class="consent"><input type="checkbox" name="updates" checked /> Text me when the bike is ready</label>
+        <div class="actions">
+          <button type="submit" class="btn-primary">Request booking</button>
+          <button type="reset" class="btn-link">Clear form</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
