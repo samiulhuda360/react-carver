@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>react-carver</title>
+<style>
+  :root {
+    --paper: #f5f1e8; --card: #fffdf8; --ink: #2b211a; --muted: #6d6156; --line: #ddd3c3;
+    --moss: #2f6f68; --moss-soft: #e3efec; --clay: #b5653f; --clay-soft: #f6e6dc; --code: #1f2523;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 system-ui, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); }
+  header.top { display: flex; align-items: baseline; gap: 14px; padding: 14px 22px; border-bottom: 1px solid var(--line); background: var(--card); }
+  header.top h1 { margin: 0; font: 600 22px Georgia, "Times New Roman", serif; }
+  header.top h1 span { color: var(--moss); }
+  header.top p { margin: 0; color: var(--muted); }
+  .wrap { display: grid; grid-template-columns: 330px 1fr; gap: 18px; padding: 18px 22px; height: calc(100vh - 62px); }
+  aside.panel { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; overflow: auto; }
+  .panel h2 { font: 600 13px system-ui; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
+  .src-tabs { display: flex; gap: 4px; margin-bottom: 10px; }
+  .src-tabs button { flex: 1; border: 1px solid var(--line); background: var(--paper); padding: 6px; border-radius: 6px; cursor: pointer; color: var(--ink); }
+  .src-tabs button.on { background: var(--moss); border-color: var(--moss); color: #fff; }
+  select, textarea, input[type=url] { width: 100%; border: 1px solid var(--line); border-radius: 6px; padding: 8px; font: inherit; background: #fff; color: var(--ink); }
+  textarea { height: 150px; font: 12px/1.4 ui-monospace, Consolas, monospace; resize: vertical; }
+  .src { display: none; } .src.on { display: block; }
+  label.ai { display: flex; gap: 8px; align-items: center; margin: 12px 0; color: var(--muted); }
+  button.go { width: 100%; background: var(--clay); color: #fff; border: 0; border-radius: 6px; padding: 10px; font: 600 15px system-ui; cursor: pointer; }
+  button.go:disabled { opacity: .6; cursor: wait; }
+  .checks { list-style: none; padding: 0; margin: 18px 0 0; }
+  .checks li { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  .badge { font: 600 12px system-ui; padding: 1px 8px; border-radius: 10px; }
+  .badge.ok { background: var(--moss-soft); color: var(--moss); }
+  .badge.no { background: var(--clay-soft); color: var(--clay); }
+  .overall { margin-top: 12px; padding: 10px; border-radius: 6px; text-align: center; font-weight: 600; }
+  .overall.ok { background: var(--moss); color: #fff; } .overall.no { background: var(--clay); color: #fff; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  .stat { background: var(--paper); border-radius: 6px; padding: 8px; }
+  .stat b { display: block; font: 600 20px Georgia, serif; color: var(--moss); }
+  .stat span { color: var(--muted); font-size: 12px; }
+  main.view { display: flex; flex-direction: column; min-height: 0; background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  nav.tabs { display: flex; border-bottom: 1px solid var(--line); }
+  nav.tabs button { border: 0; background: none; padding: 12px 18px; font: 600 14px system-ui; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; }
+  nav.tabs button.on { color: var(--ink); border-bottom-color: var(--clay); }
+  .pane { display: none; flex: 1; min-height: 0; } .pane.on { display: flex; }
+  .side { gap: 1px; background: var(--line); width: 100%; }
+  .side figure { margin: 0; flex: 1; display: flex; flex-direction: column; background: var(--card); min-width: 0; }
+  .side figcaption { padding: 6px 12px; font: 600 12px system-ui; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .side iframe { flex: 1; border: 0; background: #fff; width: 100%; }
+  .files { width: 100%; }
+  .files ul { list-style: none; margin: 0; padding: 8px; width: 250px; border-right: 1px solid var(--line); overflow: auto; }
+  .files li { padding: 5px 8px; border-radius: 5px; cursor: pointer; font: 13px ui-monospace, Consolas, monospace; }
+  .files li.on { background: var(--moss-soft); color: var(--moss); }
+  pre.code { flex: 1; margin: 0; padding: 14px 16px; overflow: auto; background: var(--code); color: #e4e0d6; font: 13px/1.5 ui-monospace, Consolas, monospace; }
+  pre.code .t { color: #8fd0c4; } pre.code .s { color: #e7b48f; } pre.code .k { color: #e3c17d; } pre.code .c { color: #8a8f88; }
+  .report { padding: 6px 22px 22px; overflow: auto; width: 100%; }
+  .report table { border-collapse: collapse; margin: 8px 0 16px; font-size: 13px; }
+  .report th, .report td { border: 1px solid var(--line); padding: 4px 8px; text-align: left; vertical-align: top; }
+  .report th { background: var(--paper); }
+  .report h1 { font: 600 20px Georgia, serif; } .report h2 { font: 600 16px Georgia, serif; margin-top: 18px; }
+  .report code { background: var(--paper); padding: 0 3px; border-radius: 3px; font-size: 12px; }
+  .empty { margin: auto; color: var(--muted); text-align: center; }
+  .err { color: var(--clay); margin-top: 10px; }
+</style>
+</head>
+<body>
+<header class="top"><h1>react-<span>carver</span></h1><p>Static HTML in, clean React components out, checked against the original.</p></header>
+<div class="wrap">
+  <aside class="panel">
+    <h2>Page to convert</h2>
+    <div class="src-tabs">
+      <button data-src="sample" class="on">Sample</button><button data-src="paste">Paste</button><button data-src="url">URL</button>
+    </div>
+    <div class="src on" id="src-sample"><select id="sample"></select></div>
+    <div class="src" id="src-paste"><textarea id="html" placeholder="<!doctype html> ..."></textarea></div>
+    <div class="src" id="src-url"><input type="url" id="url" placeholder="https://example.com/page.html"></div>
+    <label class="ai"><input type="checkbox" id="ai"> Ask AI for clearer names</label>
+    <button class="go" id="go">Convert to React</button>
+    <div class="err" id="err"></div>
+    <div id="result"></div>
+  </aside>
+  <main class="view">
+    <nav class="tabs">
+      <button data-pane="side" class="on">Side by side</button><button data-pane="files">Files</button><button data-pane="report">Report</button>
+    </nav>
+    <div class="pane side on" id="pane-side"><p class="empty">Pick a page and press <b>Convert to React</b>.</p></div>
+    <div class="pane files" id="pane-files"></div>
+    <div class="pane" id="pane-report"><div class="report" id="report"></div></div>
+  </main>
+</div>
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+let source = "sample";
+let files = {};
+
+document.querySelectorAll(".src-tabs button").forEach((b) => b.onclick = () => {
+  source = b.dataset.src;
+  document.querySelectorAll(".src-tabs button").forEach((x) => x.classList.toggle("on", x === b));
+  document.querySelectorAll(".src").forEach((x) => x.classList.toggle("on", x.id === "src-" + source));
+});
+document.querySelectorAll("nav.tabs button").forEach((b) => b.onclick = () => showPane(b.dataset.pane));
+function showPane(name) {
+  document.querySelectorAll("nav.tabs button").forEach((x) => x.classList.toggle("on", x.dataset.pane === name));
+  document.querySelectorAll(".pane").forEach((x) => x.classList.toggle("on", x.id === "pane-" + name));
+}
+
+fetch("/api/samples").then((r) => r.json()).then((list) => {
+  $("#sample").innerHTML = list.map((s) => `<option>${esc(s)}</option>`).join("");
+});
+
+function highlight(code) {
+  return esc(code)
+    .replace(/"(.*?)"/g, "<span class='s'>\"$1\"</span>")
+    .replace(/(\{\/\*.*?\*\/\})/g, "<span class='c'>$1</span>")
+    .replace(/\b(import|export|from|function|return|const|interface|type)\b/g, "<span class='k'>$1</span>")
+    .replace(/(&lt;\/?)([A-Za-z][\w.]*)/g, "$1<span class='t'>$2</span>");
+}
+
+function markdown(md) {
+  const out = [];
+  const lines = md.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const l = lines[i];
+    const inline = (s) => esc(s).replace(/`([^`]+)`/g, "<code>$1</code>").replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
+    if (l.startsWith("|")) {
+      const rows = [];
+      while (i < lines.length && lines[i].startsWith("|")) rows.push(lines[i++]);
+      i--;
+      const cells = (r) => r.slice(1, -1).split(/(?<!\\)\|/).map((c) => inline(c.trim().replace(/\\\|/g, "|")));
+      out.push("<table><tr>" + cells(rows[0]).map((c) => `<th>${c}</th>`).join("") + "</tr>" +
+        rows.slice(2).map((r) => "<tr>" + cells(r).map((c) => `<td>${c}</td>`).join("") + "</tr>").join("") + "</table>");
+    } else if (l.startsWith("## ")) out.push(`<h2>${inline(l.slice(3))}</h2>`);
+    else if (l.startsWith("# ")) out.push(`<h1>${inline(l.slice(2))}</h1>`);
+    else if (l.startsWith("- ")) out.push(`<p>&bull; ${inline(l.slice(2))}</p>`);
+    else if (l.trim()) out.push(`<p>${inline(l)}</p>`);
+  }
+  return out.join("");
+}
+
+function showFile(name) {
+  document.querySelectorAll(".files li").forEach((x) => x.classList.toggle("on", x.dataset.f === name));
+  $("#code").innerHTML = highlight(files[name]);
+}
+
+$("#go").onclick = async () => {
+  const body = { ai: $("#ai").checked };
+  if (source === "sample") body.sample = $("#sample").value;
+  if (source === "paste") body.html = $("#html").value;
+  if (source === "url") body.url = $("#url").value;
+  $("#go").disabled = true; $("#go").textContent = "Converting..."; $("#err").textContent = "";
+  try {
+    const r = await fetch("/api/convert", { method: "POST", body: JSON.stringify(body) });
+    const data = await r.json();
+    if (data.error) throw new Error(data.error);
+    render(data);
+  } catch (e) {
+    $("#err").textContent = e.message;
+  } finally {
+    $("#go").disabled = false; $("#go").textContent = "Convert to React";
+  }
+};
+
+function render(d) {
+  const v = d.verification;
+  const row = (label, ok) => `<li>${label}<span class="badge ${ok ? "ok" : "no"}">${ok ? "yes" : "no"}</span></li>`;
+  const sections = d.report.components.filter((c) => c.kind === "section").length;
+  const repeated = d.report.components.filter((c) => c.kind === "repeated").length;
+  $("#result").innerHTML = `
+    <ul class="checks">
+      ${row("Compiles", v.compiled)}${row("Type-checks", v.typechecked)}
+      ${row("Renders cleanly", v.rendered && !v.warnings.length)}${row("Same text", v.textMatch)}${row("Same structure", v.domMatch)}
+    </ul>
+    <div class="overall ${v.pass ? "ok" : "no"}">${v.pass ? "Matches the original page" : "Differs from the original"}</div>
+    <div class="stats">
+      <div class="stat"><b>${sections}</b><span>section components</span></div>
+      <div class="stat"><b>${repeated}</b><span>repeated-block components</span></div>
+      <div class="stat"><b>${Object.keys(d.files).length}</b><span>files written</span></div>
+      <div class="stat"><b>${d.report.issues.length}</b><span>items need a person</span></div>
+    </div>`;
+  $("#pane-side").innerHTML = `
+    <figure><figcaption>Original HTML</figcaption><iframe src="/preview/${d.id}/original"></iframe></figure>
+    <figure><figcaption>React render</figcaption><iframe src="/preview/${d.id}/react"></iframe></figure>`;
+  files = d.files;
+  const names = Object.keys(files).sort((a, b) => (a === "src/App.tsx" ? -1 : b === "src/App.tsx" ? 1 : a.localeCompare(b)));
+  $("#pane-files").innerHTML = `<ul>${names.map((n) => `<li data-f="${esc(n)}">${esc(n)}</li>`).join("")}</ul><pre class="code" id="code"></pre>`;
+  document.querySelectorAll(".files li").forEach((li) => li.onclick = () => showFile(li.dataset.f));
+  showFile("src/App.tsx");
+  $("#report").innerHTML = markdown(d.reportMd);
+}
+</script>
+</body>
+</html>
