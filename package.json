@@ -1,0 +1,39 @@
+{
+  "name": "react-carver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Turns a static HTML page into clean, typed React components: splits by structure, converts attributes, extracts repeated blocks into components with props, and reports what still needs a human.",
+  "license": "MIT",
+  "author": "Samiul Huda",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "convert": "node --experimental-strip-types --no-warnings src/cli.ts",
+    "demo": "node --experimental-strip-types --no-warnings src/cli.ts samples/ridgeway-tours/index.html -o demo-out",
+    "ui": "node --experimental-strip-types --no-warnings src/ui/server.ts",
+    "eval": "node --experimental-strip-types --no-warnings eval/run.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "check": "npm run lint && npm run typecheck && npm test && npm run eval -- --min-pass 1"
+  },
+  "dependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "esbuild": "^0.25.5",
+    "parse5": "^7.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.0",
+    "@types/node": "^22.15.0",
+    "eslint": "^9.30.0",
+    "globals": "^16.3.0",
+    "typescript-eslint": "^8.35.0",
+    "vitest": "^3.2.0"
+  }
+}
