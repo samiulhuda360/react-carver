@@ -11,7 +11,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 2587
+      "ms": 1674
     },
     "naive": {
       "compiled": true,
@@ -27,7 +27,7 @@
         "Invalid event handler property `%s`. React events use the camelCase naming convention, for example `onClick`. onclick"
       ],
       "firstDiff": "body > nav[0] > div[0] > div[0] > #text[1]: expected text \" \", got <button>",
-      "ms": 666
+      "ms": 417
     },
     "sections": {
       "found": 6,
@@ -64,7 +64,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 603
+      "ms": 327
     },
     "naive": {
       "compiled": true,
@@ -76,7 +76,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "body > header[0] > nav[1] > #text[1]: expected text \" \", got <a>",
-      "ms": 350
+      "ms": 195
     },
     "sections": {
       "found": 5,
@@ -113,7 +113,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 456
+      "ms": 219
     },
     "naive": {
       "compiled": true,
@@ -132,7 +132,7 @@
         "Invalid DOM property `%s`. Did you mean `%s`? datetime dateTime"
       ],
       "firstDiff": "body > div[1] > aside[1] > form[2] > #text[1]: expected text \" \", got <input>",
-      "ms": 454
+      "ms": 225
     },
     "sections": {
       "found": 4,
@@ -169,7 +169,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 379
+      "ms": 171
     },
     "naive": {
       "compiled": true,
@@ -185,7 +185,7 @@
       ],
       "warnings": [],
       "firstDiff": "not rendered",
-      "ms": 410
+      "ms": 164
     },
     "sections": {
       "found": 3,
@@ -222,7 +222,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 409
+      "ms": 198
     },
     "naive": {
       "compiled": true,
@@ -253,7 +253,7 @@
         "You provided a `checked` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultChecked`. Otherwise, set either `onChange` or `readOnly`."
       ],
       "firstDiff": "body > main[0] > form[2]: attributes differ: [action=/book | class=booking-form | method=post | novalidate] vs [action=/book | class=booking-form | method=post]",
-      "ms": 280
+      "ms": 175
     },
     "sections": {
       "found": 2,
@@ -290,7 +290,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 344
+      "ms": 135
     },
     "naive": {
       "compiled": true,
@@ -309,7 +309,7 @@
         "Invalid DOM property `%s`. Did you mean `%s`? colspan colSpan"
       ],
       "firstDiff": "",
-      "ms": 327
+      "ms": 162
     },
     "sections": {
       "found": 1,
@@ -346,7 +346,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 240
+      "ms": 137
     },
     "naive": {
       "compiled": true,
@@ -372,7 +372,7 @@
         "Invalid DOM property `%s`. Did you mean `%s`? srcset srcSet"
       ],
       "firstDiff": "body > header[0] > div[1] > button[0] > #text[0]: expected text \" \", got <svg>",
-      "ms": 394
+      "ms": 127
     },
     "sections": {
       "found": 3,
@@ -409,7 +409,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 380
+      "ms": 150
     },
     "naive": {
       "compiled": false,
@@ -430,7 +430,7 @@
       ],
       "warnings": [],
       "firstDiff": "not rendered",
-      "ms": 329
+      "ms": 139
     },
     "sections": {
       "found": 2,
@@ -467,7 +467,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 369
+      "ms": 173
     },
     "naive": {
       "compiled": false,
@@ -494,7 +494,7 @@
       ],
       "warnings": [],
       "firstDiff": "not rendered",
-      "ms": 459
+      "ms": 183
     },
     "sections": {
       "found": 4,
@@ -531,7 +531,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 254
+      "ms": 209
     },
     "naive": {
       "compiled": true,
@@ -546,14 +546,14 @@
       ],
       "warnings": [],
       "firstDiff": "not rendered",
-      "ms": 272
+      "ms": 144
     },
     "sections": {
       "found": 2,
       "total": 2,
       "namedRules": 2,
       "namedAi": 2,
-      "namedAiAll": 1
+      "namedAiAll": 2
     },
     "repeated": {
       "detected": 1,
@@ -583,7 +583,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 341
+      "ms": 235
     },
     "naive": {
       "compiled": true,
@@ -606,14 +606,14 @@
         "You provided a `value` prop to a form field without an `onChange` handler. This will render a read-only field. If the field should be mutable use `defaultValue`. Otherwise, set either `onChange` or `readOnly`."
       ],
       "firstDiff": "body > main[0]: attributes differ: [class=product | itemscope | itemtype=https://schema.org/Product] vs [class=product | itemtype=https://schema.org/Product]",
-      "ms": 362
+      "ms": 229
     },
     "sections": {
       "found": 4,
       "total": 4,
       "namedRules": 4,
       "namedAi": 4,
-      "namedAiAll": 3
+      "namedAiAll": 4
     },
     "repeated": {
       "detected": 2,
@@ -643,7 +643,7 @@
       "errors": [],
       "warnings": [],
       "firstDiff": "",
-      "ms": 413
+      "ms": 240
     },
     "naive": {
       "compiled": true,
@@ -661,7 +661,7 @@
       ],
       "warnings": [],
       "firstDiff": "not rendered",
-      "ms": 464
+      "ms": 177
     },
     "sections": {
       "found": 3,

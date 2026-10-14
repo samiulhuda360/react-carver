@@ -1,4 +1,0 @@
-{
-  "model": "gemini-flash-lite-latest",
-  "answer": "```json\n{\"components\":[{\"id\":\"s0\",\"name\":\"Team\",\"props\":{}},{\"id\":\"s1\",\"name\":\"HiringCallout\",\"props\":{}},{\"id\":\"r0\",\"name\":\"TeamMember\",\"props\":{\"items\":\"links\"}}]}\n```"
-}

@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"Sidebar\",\"props\":{}},{\"id\":\"s1\",\"name\":\"SideNav\",\"props\":{}},{\"id\":\"s2\",\"name\":\"TodaySection\",\"props\":{}},{\"id\":\"s3\",\"name\":\"RecentOrders\",\"props\":{}},{\"id\":\"r0\",\"name\":\"StatCard\",\"props\":{}},{\"id\":\"r1\",\"name\":\"RecentOrderRow\",\"props\":{\"label\":\"orderId\",\"cell\":\"customerName\",\"cell2\":\"total\",\"variant\":\"statusClass\",\"badge\":\"status\"}}]abschließen"
+}

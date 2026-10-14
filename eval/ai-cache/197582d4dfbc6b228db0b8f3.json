@@ -1,4 +1,0 @@
-{
-  "model": "gemini-flash-lite-latest",
-  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"Sidebar\",\"props\":{}},{\"id\":\"s1\",\"name\":\"SidebarNav\",\"props\":{}},{\"id\":\"s2\",\"name\":\"DashboardContent\",\"props\":{}},{\"id\":\"s3\",\"name\":\"RecentOrders\",\"props\":{}},{\"id\":\"r0\",\"name\":\"StatCard\",\"props\":{\"label\":\"title\",\"value\":\"amount\",\"style\":\"barStyle\"}},{\"id\":\"r1\",\"name\":\"OrderRow\",\"props\":{\"href\":\"orderUrl\",\"label\":\"orderId\",\"cell\":\"customerName\",\"cell2\":\"totalAmount\",\"variant\":\"statusClass\",\"badge\":\"status\"}}]inheritdoc}"
-}

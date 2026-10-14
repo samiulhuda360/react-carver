@@ -197,7 +197,7 @@ and comments with regular expressions.
 | Repeated blocks, recall (labelled runs found) | 19/19 (100%) |
 | Repeated blocks, precision (found runs that were labelled) | 19/19 (100%) |
 | Component names a reviewer accepts: rules only | 53/58 (91.4%) |
-| Component names a reviewer accepts: AI renames every component | 43/58 (74.1%) |
+| Component names a reviewer accepts: AI renames every component | 45/58 (77.6%) |
 | Component names a reviewer accepts: AI renames only guessed names (default) | 53/58 (91.4%) |
 | Props with a generic name (`text2`, `cell3`, `label`...): rules only | 24/76 (31.6%) |
 | Props with a generic name: rules + AI | **8/76 (10.5%)** |

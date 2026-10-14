@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"name\":\"Product\",\"props\":{}},{\"id\":\"s1\",\"name\":\"ProductMedia\",\"props\":{}},{\"id\":\"s2\",\"name\":\"ProductInfo\",\"props\":{}},{\"id\":\"s3\",\"name\":\"ProductPurchase\",\"props\":{}},{\"id\":\"s4\",\"name\":\"ProductReviews\",\"props\":{}},{\"id\":\"r0\",\"name\":\"ProductThumb\",\"props\":{}},{\"id\":\"r1\",\"name\":\"CustomerReview\",\"props\":{}}]}"
+}

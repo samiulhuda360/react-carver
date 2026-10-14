@@ -21,7 +21,7 @@
 | Repeated blocks: recall (labelled runs found) | 19/19 (100.0%) |
 | Repeated blocks: precision (found runs that were labelled) | 19/19 (100.0%) |
 | Component names a reviewer accepts, rules only | 53/58 (91.4%) |
-| Component names a reviewer accepts, AI renames every component | 43/58 (74.1%) |
+| Component names a reviewer accepts, AI renames every component | 45/58 (77.6%) |
 | Component names a reviewer accepts, AI renames only weak names (default) | 53/58 (91.4%) |
 | Props with a generic name (text2, cell3, label...), rules only | 24/76 (31.6%) |
 | Props with a generic name, rules + AI | 8/76 (10.5%) |
@@ -30,15 +30,15 @@
 
 | Page | Pass | Components | Sections found | Repeated runs (matched/labelled/found) | Time |
 | --- | --- | --- | --- | --- | --- |
-| ridgeway-tours/index.html | yes | 11 | 6/6 | 4/4/4 | 2587 ms |
-| pricing.html | yes | 9 | 5/5 | 2/2/2 | 603 ms |
-| blog.html | yes | 9 | 4/4 | 2/2/2 | 456 ms |
-| restaurant-menu.html | yes | 6 | 3/3 | 2/2/2 | 379 ms |
-| contact-form.html | yes | 3 | 2/2 | 0/0/0 | 409 ms |
-| data-table.html | yes | 3 | 1/1 | 1/1/1 | 344 ms |
-| gallery.html | yes | 5 | 3/3 | 1/1/1 | 240 ms |
-| docs-page.html | yes | 3 | 2/2 | 0/0/0 | 380 ms |
-| event-landing.html | yes | 7 | 4/4 | 2/2/2 | 369 ms |
-| team-page.html | yes | 4 | 2/2 | 1/1/1 | 254 ms |
-| product-page.html | yes | 8 | 4/4 | 2/2/2 | 341 ms |
-| dashboard.html | yes | 7 | 3/3 | 2/2/2 | 413 ms |
+| ridgeway-tours/index.html | yes | 11 | 6/6 | 4/4/4 | 1674 ms |
+| pricing.html | yes | 9 | 5/5 | 2/2/2 | 327 ms |
+| blog.html | yes | 9 | 4/4 | 2/2/2 | 219 ms |
+| restaurant-menu.html | yes | 6 | 3/3 | 2/2/2 | 171 ms |
+| contact-form.html | yes | 3 | 2/2 | 0/0/0 | 198 ms |
+| data-table.html | yes | 3 | 1/1 | 1/1/1 | 135 ms |
+| gallery.html | yes | 5 | 3/3 | 1/1/1 | 137 ms |
+| docs-page.html | yes | 3 | 2/2 | 0/0/0 | 150 ms |
+| event-landing.html | yes | 7 | 4/4 | 2/2/2 | 173 ms |
+| team-page.html | yes | 4 | 2/2 | 1/1/1 | 209 ms |
+| product-page.html | yes | 8 | 4/4 | 2/2/2 | 235 ms |
+| dashboard.html | yes | 7 | 3/3 | 2/2/2 | 240 ms |

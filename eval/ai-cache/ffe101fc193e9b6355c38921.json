@@ -1,0 +1,4 @@
+{
+  "model": "gemini-flash-lite-latest",
+  "answer": "{\"components\":[{\"id\":\"s0\",\"kind\":\"section\",\"current\":\"Team\",\"props\":[]},{\"id\":\"s1\",\"kind\":\"section\",\"current\":\"Hiring\",\"props\":[]},{\"id\":\"r0\",\"kind\":\"repeated\",\"current\":\"Member\",\"props\":{\"memberId\":\"id\",\"items\":\"links\"}}]}"
+}
